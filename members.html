@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <title>Members Registration</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            padding: 20px;
+        }
+        .memberform{
+            text-align: left;
+            padding: 20px;
+            line-height: 5em;
+            margin: 0 15%;
+            box-shadow: 2px 2px #888888;
+            border: 1px solid black;
+            font-size: 20px;
+        }
+        h2, h3{
+            text-align: center;
+            line-height: 0.5em;
+            margin-top: 30px;   
+        }
+        h2{
+            font-size: 32px;
+        }
+        .contact-box{
+            padding-top: 40px;
+        }
+        
+        .forminput{
+            margin: 0 20px;
+        }
+        input{
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid black;
+
+        }
+        .gender input{
+            cursor: pointer;
+        }
+        textarea{
+            width: 70%;
+            height: 150px;
+            padding: 10px;
+            background: #cbf3cb;
+            margin-top: 10px;
+        }
+        #membutton{
+            margin: 5px;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #9cda9c;
+        }
+        #membutton:hover{   
+            background-color: #5d9b5d;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<main>
+        
+    <header>
+        <nav>
+            <a href="../html/index.html">        
+                <div class="logo"><img src="../images/logo.png" alt="logo" title="title"></div>
+              </a>
+            
+            <ul class="links">
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/menu.html">Menu</a></li>
+                <li><a href="../html/order.html">Order</a></li>
+                <li><a href="../html/aboutus.html">About Us</a></li>
+                <li><a href="../html/members.html">Member Registration</a></li>
+            </ul>
+            <div class="cartlogo">
+                <a href="cart.html"><i class='bx bx-cart'></i></a>
+            </div>
+    </nav>
+    </header>
+    
+    <div class="container">
+        <div class="contact-box">
+            <h2>Contact Us</h2>
+            <h3>Register now to enjoy exclusive discounts and early access to promotions!</h3>
+            <br>
+            <br>
+            <form class="memberform" method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                    <div class="forminput">
+                        <label for="loginid">Login ID: </label>
+                        <input type="text" name="loginid" id="loginid" placeholder="Login ID" pattern="[0-9]{0-10}[A-Za-z]{0-10}" required>
+                    </div>
+                    <div class="forminput">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" placeholder="Name" pattern="[A-Za-z/s]{3-50}" required>
+                    </div>
+                    <div class="forminput">
+                        <label for="password">Password: </label>
+                        <input type="password" name="password" id="password" placeholder="Password" pattern="[0-9][A-Za-z][#?!@$%^&*-\]{10-50}" required>
+                    </div>
+                    <div class="forminput">
+                        <label>Mobile Number: </label>
+                        <input name="mobile" type="tel" pattern="[8-9]{1}[0-9]{7}" placeholder="8 digits start with 8 or 9">
+                    </div>
+                    <div class="forminput">
+                        <label>Gender: </label>
+                        <input type="radio" name="gender"  value="M">Male
+                        <input type="radio" name="gender" value="F">Female
+                        <input type="radio" name="gender" value="o">Others
+                    </div>
+                    <div class="forminput">
+                        <label>Email Address: </label>
+                        <input type="email" class="field" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="forminput">
+                        <label>Address: </label>
+                        <input type="text" class="field" name="address" id="address" placeholder="Your Address" required>
+                    </div>
+                    <div class="forminput">
+                        <label>Favourite Dessert/Fruits: </label><br>
+                        <textarea name="feedback" rows="3" cols="30" ></textarea>
+                    </div>
+                    <button id="membutton" type="submit">Subscribe</button>
+                      
+            </form>
+        </div>
+    </div>
+      
+
+        
+
+</main>
+<footer>
+    <div class="content">
+        <div class="top">
+            <div class="logo-details">
+                <img class="footerlogo" src="../images/logo.png" alt="logo" title="title">
+                <span class='logo_name'>Singapore Delights</span>
+            </div>
+            <div class="media-icons">
+                <a href="https://www.facebook.com/koufu.sg"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/koufu.sg/?hl=en"><i class='bx bxl-instagram'></i></a>
+                <a href="https://sg.linkedin.com/company/koufu-pte-ltd"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+        <div class="footer-link">
+            <ul class='box'>
+                <li class='link-name'>Singapore Delights</li>
+                <li><a href="../html/menu.html">Menu</a></li>
+                <li><a href="../html/order.html">Order</a></li>
+            </ul>
+            <ul class='aboutus'>
+                <li class='link-name'>About Singapore Delights</li>
+                <li><a href="../html/aboutus.html">About Us</a></li>
+            </ul>
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <ul class='box input-box'>
+                    <li class='link-name'>Subscribe</li>
+                    <li>
+                        <label>
+                        <input type="email" class="field" name="email" placeholder="Your Email" required>
+                        </label>
+                    </li>
+                </ul>    
+                    <button type="submit">Subscribe</button>
+                
+            </form>
+
+        </div>
+    </div>
+    <div class="bottom-details">
+        <div class="bottom-text">
+            <span class="copyright_text">Copyright &#169; 2024 <a href="https://www.nyp.edu.sg/student-life/visit-nyp/nyp-campus/food-and-beverage.html">NYP Koufu. All rights reserved.</a></span>
+            <span class="policy_terms">
+                <a href="../html/policy.html">Privacy & Policy</a>
+                <a href="../html/terms.html">Terms & Conditions</a>
+            </span>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

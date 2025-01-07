@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <title>Order</title>
+    <style>
+        .orderform {
+          max-width: 400px;
+          margin: 0 20em;
+          padding: 20px;
+          border-radius: 5px;
+        }
+        #orderbutton {
+          background-color: #9cda9c;
+          color: #fff;
+          padding: 10px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        h1{
+          text-align: center;
+          padding-top: 30px;
+        }
+        #orderbutton:hover {
+          background-color: #5d9b5d;
+        }
+        select, textarea {
+          width: 100%;
+          padding: 8px;
+          margin-bottom: 16px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        .payment{
+          padding:  20px 0px;
+          margin: auto;
+        }
+    </style>
+</head>
+<body>
+<main>
+        
+    <header>
+        <nav>
+          <a href="../html/index.html">        
+            <div class="logo"><img src="../images/logo.png" alt="logo" title="title"></div>
+          </a>
+        
+        <ul class="links">
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../html/menu.html">Menu</a></li>
+            <li><a href="../html/order.html">Order</a></li>
+            <li><a href="../html/aboutus.html">About Us</a></li>
+            <li><a href="../html/members.html">Member Registration</a></li>
+        </ul>
+        <div class="cartlogo">
+          <a href="cart.html"><i class='bx bx-cart'></i></a>
+      </div>
+    </nav>
+    </header>
+
+    <h1>Order form</h1>
+    <form class="orderform" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        
+        <label for="foodItem">Food Item:</label>
+        <select id="foodItem" name="foodItem" required>
+          <option value="">Select One...</option>
+          <option value="mangosago">Mango Pomelo Sago - $3.50</option>
+          <option value="chendol">Chendol - $2.60</option>
+          <option value="icekachang">Ice Kachang - $2.60</option>
+          <option value="chengtng">Cheng Tng (Hot/Cold) - $2.60</option>
+          <option value="redbean">Red Bean Soup - $2.60</option>
+          <option value="greenbean">Green Bean Soup - $2.60</option>
+          <option value="tausuan">Tau Suan - $2.60</option>
+          <option value="watermelon">Watermelon - $1.00</option>
+          <option value="honeydew">Honey Dew - $1.00</option>
+          <option value="apple">Apple - $0.80</option>
+          <option value="pineapple">Pineapple - $0.80</option>
+          <option value="mango">Mango - $0.80</option>
+          <option value="pear">Pear - $0.80</option>
+          <option value="dragonfruit">Dragonfruit - $0.80</option>
+      </select>
+      
+
+      
+        
+        <label for="Toppings">Toppings (Desserts Only):</label>
+        <select id="Toppings" name="Toppings">
+          <option value="">Select One...</option>
+            <option value="mango">Mango +$0.30</option>
+            <option value="durian">Durian +$0.50</option>
+            <option value="sago">Sago +$0.30</option>
+            <option value="corn">Corn +$0.30</option>
+            <option value="redbean">Red Bean +$0.30</option>
+
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+        <div class="payment">
+          <label for="quantity">Payment:</label>
+        <input type="radio" name="payment" class="payment" value="PN">Pay Now
+        <input type="radio" name="payment" class="payment" value="PL">Pay Lah
+        <input type="radio" name="payment" class="payment" value="Card">Debit or Credit
+        </div>
+        
+
+        
+
+        <label for="specialRequest">Special Request:</label>
+        <textarea id="specialRequest" name="specialRequest" rows="4"></textarea>
+    
+        <button id="orderbutton" type="submit">Place Order</button>
+    </form>
+   
+
+        
+
+</main>
+<footer>
+  <div class="content">
+      <div class="top">
+          <div class="logo-details">
+              <img class="footerlogo" src="../images/logo.png" alt="logo" title="title">
+              <span class='logo_name'>Singapore Delights</span>
+          </div>
+          <div class="media-icons">
+              <a href="https://www.facebook.com/koufu.sg"><i class='bx bxl-facebook'></i></a>
+              <a href="https://www.instagram.com/koufu.sg/?hl=en"><i class='bx bxl-instagram'></i></a>
+              <a href="https://sg.linkedin.com/company/koufu-pte-ltd"><i class='bx bxl-linkedin'></i></a>
+          </div>
+      </div>
+      <div class="footer-link">
+          <ul class='box'>
+              <li class='link-name'>Singapore Delights</li>
+              <li><a href="../html/menu.html">Menu</a></li>
+              <li><a href="../html/order.html">Order</a></li>
+          </ul>
+          <ul class='aboutus'>
+              <li class='link-name'>About Singapore Delights</li>
+              <li><a href="../html/aboutus.html">About Us</a></li>
+          </ul>
+          <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+              <ul class='box input-box'>
+                  <li class='link-name'>Subscribe</li>
+                  <li>
+                      <label>
+                        <input type="email" class="field" name="email" placeholder="Your Email">
+                      </label>
+                  </li>
+              </ul>    
+                  <button type="submit">Subscribe</button>
+              
+          </form>
+
+      </div>
+  </div>
+  <div class="bottom-details">
+      <div class="bottom-text">
+          <span class="copyright_text">Copyright &#169; 2024 <a href="https://www.nyp.edu.sg/student-life/visit-nyp/nyp-campus/food-and-beverage.html">NYP Koufu. All rights reserved.</a></span>
+          <span class="policy_terms">
+              <a href="../html/policy.html">Privacy & Policy</a>
+              <a href="../html/terms.html">Terms & Conditions</a>
+          </span>
+      </div>
+  </div>
+</footer>
+</body>
+</html>
