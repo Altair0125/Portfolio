@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <title>Menu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            color: black;
+        }
+        
+        .grid-container{ 
+            color: black;
+            width: 90%;
+            margin: auto;
+            font-size: 18px;
+        }
+        #hot-desserts1, #cold-desserts1, #fruits1, #juice1{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            color: black;
+            column-gap: 40px;
+            row-gap: 40px;
+            font-size: 14px;
+            text-align: left;
+            padding-bottom: 20px;
+            transition: all 0.6s ease;
+        }
+        p{
+            padding: 5px 5px;
+        }
+        .grid-item { 
+            text-align:center;
+            box-shadow: 1px 1px 2px 2px #888888; 
+        }
+        h2{
+            line-height: 20px;
+            padding-top: 20px;
+        }
+        
+        .grid-container img{
+            width: 70%;
+        }
+        .menu-link{
+            display: inline;
+            list-style-type: none;
+            column-gap: 10px;
+        }
+        .link{
+            padding: 20px;
+            width: 100%;
+            
+        }
+        img{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<main>
+        
+    <header>
+        <nav>
+            <a href="../html/index.html">        
+                <div class="logo"><img src="../images/logo.png" alt="logo" title="title"></div>
+              </a>
+            
+            <ul class="links">
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/menu.html">Menu</a></li>
+                <li><a href="../html/order.html">Order</a></li>
+                <li><a href="../html/aboutus.html">About Us</a></li>
+                <li><a href="../html/members.html">Member Registration</a></li>
+            </ul>
+            <div class="cartlogo">
+                <a href="cart.html"><i class='bx bx-cart'></i></a>
+            </div>
+    </nav>
+    </header>
+    
+    
+    
+    <div class="link">
+        <ul>
+            <li class="menu-link"><a href="#hot-desserts">Hot Desserts</a> |</li>
+            
+            <li class="menu-link"><a href="#cold-desserts">Cold Desserts</a> |</li>
+              
+            <li class="menu-link"><a href="#fruits">Fruits</a> |</li>
+            
+            <li class="menu-link"><a href="#juice">Juice</a></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="grid-container">
+        <a><h3 id="hot-desserts">Hot Desserts</h3>
+            <div id="hot-desserts1">
+                <div class="grid-item">
+                    <img src="../images/2773324.jpg" alt="Tau Suan">
+                    <p>Tau Suan</p>
+                    <p>$2.60</p>
+                    <p>Tau Suan is a Chinese dessert consisting of mung bean paste in a sweet soup, often served warm and garnished with pieces of you tiao (fried dough).</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../images/redbean.jpg" alt="redbean">
+                    <p>Red Bean Soup</p>
+                    <p>$2.60</p>
+                    <p>Red bean soup is a sweet and velvety Asian dessert made from adzuki beans, often simmered with sugar or rock sugar to create a warm and comforting soup.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../images/3938874.jpg" alt="greenbean">
+                    <p>Green Bean Soup</p>
+                    <p>$2.60</p>
+                    <p>Green bean soup is a sweet Asian dessert made from mung beans, typically boiled with sugar and pandan leaves, resulting in a comforting and mildly sweet soup.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../images/cheng-tng.jpg" alt="chengtng">
+                    <p>Cheng Tng (Hot) </p>
+                    <p>$2.60</p>
+                    <p>Cheng Tng is a sweet and cold Singaporean dessert soup with a mix of ingredients like barley and lotus seeds.</p>
+                </div>
+            </div>
+        </a>
+        <br>
+        <br>
+        <a><h3 id="cold-desserts">Cold Desserts</h3>
+            <div id="cold-desserts1">
+                <div class="grid-item">
+                    <img src="../images/desserts-koufu-westmall.jpg" alt="Mango Pomelo Sago">
+                    <p>Mango Pomelo Sago</p>
+                    <p>$3.50</p>
+                    <p>Mango Pomelo Sago is a Hong Kong dessert with ripe mango, pomelo, and sago pearls in sweet coconut milk or condensed milk.</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="../images/chendol.jpg" alt="Chendol">
+                    <p>Chendol</p>
+                    <p>$2.60</p>
+                    <p>Chendol is a Southeast Asian dessert featuring shaved ice topped with green pandan-flavored jelly noodles, coconut milk, and palm sugar.</p>
+                </div> 
+
+                <div class="grid-item">
+                    <img src="../images/icekachang-koufu.jpg" alt="Ice Kachang">
+                    <p>Ice Kachang</p>
+                    <p>$2.60</p>
+                    <p>Ice Kachang is a Singaporean shaved ice dessert with red beans, agar agar jelly, grass jelly, and flavored syrups</p> 
+                </div>
+                <div class="grid-item">
+                    <img src="../images/cheng-tng.jpg" alt="chengtng">
+                    <p>Cheng Tng (Cold)</p>
+                    <p>$2.60</p>
+                    <p>Cheng Tng is a sweet and cold Singaporean dessert soup with a mix of ingredients like barley and lotus seeds.</p>
+                </div>
+            </div>        
+        </a>
+        <br>
+        <br>
+        <a><h3 id="fruits">Fruits</h3>
+            <div id="fruits1">
+                <div class="grid-item">
+                    <img src="../images/watermelon.jpg" alt="watermelon">
+                    <p>Watermelon</p>
+                    <p>$1.00</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="../images/honeydew.jpg" alt="honeydew">
+                    <p>Honey Dew</p>
+                    <p>$1.00</p>
+                </div> 
+
+                <div class="grid-item">
+                    <img src="../images/dragonfruits.jpg" alt="Dragonfruit">
+                    <p>Dragonfruit</p>    
+                    <p>$0.80</p>    
+                </div>
+                <div class="grid-item">
+                    <img src="../images/pear.jpg" alt="pear">
+                    <p>Pear</p>
+                    <p>$0.80</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../images/honey-pineapple.jpg" alt="pineapple">
+                    <p>Pineapple</p>
+                    <p>$0.80</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../images/apple.jpg" alt="apple">
+                    <p>Apple</p>
+                    <p>$0.80</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../images/mango.jpg" alt="mango">
+                    <p>Mango</p>
+                    <p>$0.80</p>
+                </div>
+            </div>        
+        </a>
+        <br>
+        <br>
+        <a><h3 id="juice">Juice</h3>
+            <div id="juice1">
+                <div class="grid-item">
+                    <img src="../images/watermelonjuice.jpg" alt="watermelonjuice">
+                    <p>Watermelon</p>
+                    <p>$1.00</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="../images/papayajuice.jpg" alt="papayajuice">
+                    <p>Honey Dew</p>
+                    <p>$1.00</p>
+                </div> 
+
+                <div class="grid-item">
+                    <img src="../images/red-apple-juice.jpg" alt="applejuice">
+                    <p>Dragonfruit</p>    
+                    <p>$0.80</p>    
+                </div>
+                <div class="grid-item">
+                    <img src="../images/pearjuice.jpg" alt="pearjuice">
+                    <p>Pear</p>
+                    <p>$0.80</p>
+                </div>
+                
+            </div>        
+        </a>
+
+    </div>
+
+        
+
+</main>
+<footer>
+    <div class="content">
+        <div class="top">
+            <div class="logo-details">
+                <img class="footerlogo" src="../images/logo.png" alt="logo" title="title">
+                <span class='logo_name'>Singapore Delights</span>
+            </div>
+            <div class="media-icons">
+                <a href="https://www.facebook.com/koufu.sg"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/koufu.sg/?hl=en"><i class='bx bxl-instagram'></i></a>
+                <a href="https://sg.linkedin.com/company/koufu-pte-ltd"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+        <div class="footer-link">
+            <ul class='box'>
+                <li class='link-name'>Singapore Delights</li>
+                <li><a href="../html/menu.html">Menu</a></li>
+                <li><a href="../html/order.html">Order</a></li>
+            </ul>
+            <ul class='aboutus'>
+                <li class='link-name'>About Singapore Delights</li>
+                <li><a href="../html/aboutus.html">About Us</a></li>
+            </ul>
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <ul class='box input-box'>
+                    <li class='link-name'>Subscribe</li>
+                    <li>
+                        <label>
+                            <input type="email" class="field" name="email" placeholder="Your Email">
+                        </label>
+                    </li>
+                </ul>    
+                    <button type="submit">Subscribe</button>
+                
+            </form>
+
+        </div>
+    </div>
+    <div class="bottom-details">
+        <div class="bottom-text">
+            <span class="copyright_text">Copyright &#169; 2024 <a href="https://www.nyp.edu.sg/student-life/visit-nyp/nyp-campus/food-and-beverage.html">NYP Koufu. All rights reserved.</a></span>
+            <span class="policy_terms">
+                <a href="../html/policy.html">Privacy & Policy</a>
+                <a href="../html/terms.html">Terms & Conditions</a>
+            </span>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <title>Checkout</title>
+    <style>
+        .cartform{
+            text-align: left;
+            padding: 70px;
+            line-height: 3em;
+            font-size: 20px;
+        }
+        table, td, th{
+            border: 1px solid black;
+            padding: 0 5px;
+
+        }
+        td, th{
+            text-align: center;
+        }
+        .foodimg{
+            width: 200px;
+        }
+        h1{
+            text-align: center;
+            padding-top: 20px;
+        }
+        #inputcheckout{
+            border-radius: 4px;
+            padding: 5px;
+            background-color: #9cda9c;
+        }
+        #inputcheckout:hover{
+            background-color: #5d9b5d;
+        }
+    </style>
+</head>
+<body>
+<main>
+        
+    <header>
+        <nav>
+            <a href="../html/index.html">        
+                <div class="logo"><img src="../images/logo.png" alt="logo" title="title"></div>
+              </a>
+            
+            <ul class="links">
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/menu.html">Menu</a></li>
+                <li><a href="../html/order.html">Order</a></li>
+                <li><a href="../html/aboutus.html">About Us</a></li>
+                <li><a href="../html/members.html">Member Registration</a></li>
+            </ul>
+            <div class="cartlogo">
+                <a href="cart.html"><i class='bx bx-cart'></i></a>
+            </div>
+    </nav>
+    </header>
+    
+    <h1>Checkout</h1>
+    <form class="cartform" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <table>
+            <tr>
+                <th>S/N</th>
+                <th>Description</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                    <td>1</td>
+                    <td><img class="foodimg" src="../images/chendol.jpg" alt="chendol"><br><input type="text" name="dessert" id="dessert" value="Chendol" readonly></td>
+                    <td>2</td>
+                    <td>$2.60</td>
+                    <td>$5.20</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img class="foodimg" src="../images/pear.jpg" alt="pear"><br><input type="text" name="fruit" id="fruit" value="Pear" readonly></td>
+                <td>6</td>
+                <td>$1.00</td>
+                <td>$6.00</td>
+            </tr>
+            <tr>
+                <td colspan="4">Total</td>
+               
+                <td>$11.20<br><input id="inputcheckout" type="submit" value="Order"></td>
+            </tr>
+    
+        </table>
+        </form>
+    <br>
+</main>
+<footer>
+    <div class="content">
+        <div class="top">
+            <div class="logo-details">
+                <img class="footerlogo" src="../images/logo.png" alt="logo" title="title">
+                <span class='logo_name'>Singapore Delights</span>
+            </div>
+            <div class="media-icons">
+                <a href="https://www.facebook.com/koufu.sg"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/koufu.sg/?hl=en"><i class='bx bxl-instagram'></i></a>
+                <a href="https://sg.linkedin.com/company/koufu-pte-ltd"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+        <div class="footer-link">
+            <ul class='box'>
+                <li class='link-name'>Singapore Delights</li>
+                <li><a href="../html/menu.html">Menu</a></li>
+                <li><a href="../html/order.html">Order</a></li>
+            </ul>
+            <ul class='aboutus'>
+                <li class='link-name'>About Singapore Delights</li>
+                <li><a href="../html/aboutus.html">About Us</a></li>
+            </ul>
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <ul class='box input-box'>
+                    <li class='link-name'>Subscribe</li>
+                    <li>
+                        <label>
+                            <input type="email" class="field" name="email" placeholder="Your Email">
+                        </label>
+                    </li>
+                </ul>    
+                    <button type="submit">Subscribe</button>
+                
+            </form>
+
+        </div>
+    </div>
+    <div class="bottom-details">
+        <div class="bottom-text">
+            <span class="copyright_text">Copyright &#169; 2024 <a href="https://www.nyp.edu.sg/student-life/visit-nyp/nyp-campus/food-and-beverage.html">NYP Koufu. All rights reserved.</a></span>
+            <span class="policy_terms">
+                <a href="../html/policy.html">Privacy & Policy</a>
+                <a href="../html/terms.html">Terms & Conditions</a>
+            </span>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
